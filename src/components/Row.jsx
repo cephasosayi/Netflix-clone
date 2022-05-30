@@ -31,10 +31,10 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
                    .then((url)=>{
                      console.log("url is "+url);
                      const urlParams=new URLSearchParams(new URL(url).search);
-                     console.log("urlParams"+urlParams);
+                    //  console.log("urlParams"+urlParams);
                      setTrailerUrl(urlParams.get("v"));
                    })
-                   .catch((error)=> console.log(error));
+                   .catch((error)=> console.log(''));
     }
  }
     const opts = {
